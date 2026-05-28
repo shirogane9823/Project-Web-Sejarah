@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sejarah Bangunan Bersejarah | Candi Borobudur</title>
+    <meta
+      name="description"
+      content="Website wisata sejarah tentang Candi Borobudur dengan peta 360, informasi sejarah, dan galeri."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navigasi utama">
+        <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
+          <span class="brand-mark">CB</span>
+          <span>Candi Borobudur</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#lokasi">Lokasi</a></li>
+          <li><a href="#sejarah">Sejarah</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda" aria-label="Beranda">
+        <img
+          class="hero-image"
+          src="assets/borobudur-hero.png"
+          alt="Pemandangan Candi Borobudur dengan cahaya pagi"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Wisata sejarah Indonesia</p>
+          <h1>Sejarah Bangunan Bersejarah</h1>
+          <p>
+            Mengenal Candi Borobudur sebagai warisan budaya, pusat pembelajaran,
+            dan tujuan wisata sejarah yang bernilai dunia.
+          </p>
+          <a class="hero-action" href="#sejarah">Pelajari Sejarah</a>
+        </div>
+      </section>
+
+      <section class="map-section section-pad" id="lokasi">
+        <div class="section-heading">
+          <p class="eyebrow">Lokasi 360</p>
+          <h2>Jelajahi Area Candi</h2>
+          <p>
+            Kenali letak kawasan Borobudur dan bayangkan rute kunjungan dari
+            halaman utama hingga area teras candi.
+          </p>
+        </div>
+
+        <div class="map-frame" aria-label="Peta 360 Candi Borobudur">
+          <!-- Ganti isi srcdoc ini dengan src Google Maps embed jika dibutuhkan. -->
+          <iframe
+            title="Peta 360 Candi Borobudur"
+            loading="lazy"
+            srcdoc="
+              <html>
+                <head>
+                  <style>
+                    body {
+                      margin: 0;
+                      min-height: 100vh;
+                      display: grid;
+                      place-items: center;
+                      font-family: Arial, sans-serif;
+                      color: #202b3b;
+                      background:
+                        radial-gradient(circle at 60% 44%, rgba(211, 164, 82, .18) 0 4%, transparent 4.4%),
+                        linear-gradient(25deg, transparent 0 42%, rgba(62, 138, 163, .22) 42% 48%, transparent 48%),
+                        linear-gradient(105deg, transparent 0 36%, rgba(102, 152, 91, .18) 36% 44%, transparent 44%),
+                        repeating-linear-gradient(0deg, #ece7dd 0 72px, #e1ded4 72px 74px);
+                    }
+                    .pin {
+                      width: min(78%, 560px);
+                      padding: 34px;
+                      text-align: center;
+                      border: 1px solid rgba(211, 164, 82, .35);
+                      border-radius: 8px;
+                      background: rgba(255, 255, 255, .9);
+                      box-shadow: 0 24px 70px rgba(32,43,59,.16);
+                    }
+                    strong {
+                      display: block;
+                      margin-bottom: 10px;
+                      color: #bd8b35;
+                      font-size: 24px;
+                    }
+                    span {
+                      display: block;
+                      line-height: 1.55;
+                      font-size: 15px;
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class='pin'>
+                    <strong>Area Peta 360 Candi Borobudur</strong>
+                    <span>Candi Borobudur, Magelang, Jawa Tengah</span>
+                    <span>Visual lokasi untuk orientasi kunjungan sejarah.</span>
+                  </div>
+                </body>
+              </html>
+            "
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="history section-pad" id="sejarah">
+        <div class="section-heading">
+          <p class="eyebrow">Rangkuman Sejarah</p>
+          <h2>Candi Borobudur</h2>
+          <p>
+            Candi Buddha terbesar di Indonesia ini menjadi bukti kemajuan
+            arsitektur, seni pahat, dan kehidupan spiritual masyarakat Jawa
+            kuno.
+          </p>
+        </div>
+
+        <div class="history-grid">
+          <article class="info-panel">
+            <h3>Identitas Bangunan</h3>
+            <dl class="facts-list">
+              <div>
+                <dt>Nama</dt>
+                <dd>Candi Borobudur</dd>
+              </div>
+              <div>
+                <dt>Lokasi</dt>
+                <dd>Magelang, Jawa Tengah, Indonesia</dd>
+              </div>
+              <div>
+                <dt>Tahun dibangun</dt>
+                <dd>Sekitar abad ke-8 sampai ke-9 Masehi</dd>
+              </div>
+              <div>
+                <dt>Fungsi awal</dt>
+                <dd>Tempat ibadah dan ziarah umat Buddha</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="story-panel">
+            <h3>Latar Belakang Singkat</h3>
+            <p>
+              Borobudur dibangun pada masa Dinasti Syailendra. Susunan
+              bertingkatnya menggambarkan perjalanan spiritual dari dunia
+              keinginan menuju pencerahan. Relief di dinding candi merekam
+              ajaran, kisah, dan kehidupan masyarakat pada masa itu.
+            </p>
+            <p>
+              Setelah lama tertutup material alam, Borobudur kembali menarik
+              perhatian pada abad ke-19 dan kemudian dipugar secara besar-besaran.
+              Kini, kawasan ini menjadi ruang belajar sejarah, kebudayaan, dan
+              konservasi warisan dunia.
+            </p>
+          </article>
+        </div>
+
+        <div class="highlight-grid" aria-label="Fakta penting Candi Borobudur">
+          <article>
+            <span class="number">2.600+</span>
+            <p>Panel relief menghiasi dinding dan lorong candi.</p>
+          </article>
+          <article>
+            <span class="number">500+</span>
+            <p>Arca Buddha berada di berbagai tingkat bangunan.</p>
+          </article>
+          <article>
+            <span class="number">UNESCO</span>
+            <p>Diakui sebagai warisan budaya dunia.</p>
+          </article>
+          <article>
+            <span class="number">Aktif</span>
+            <p>Berfungsi sebagai situs wisata, edukasi, dan kegiatan budaya.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery section-pad" id="galeri">
+        <div class="section-heading">
+          <p class="eyebrow">Galeri</p>
+          <h2>Ragam Sudut Bangunan</h2>
+          <p>
+            Setiap sudut memperlihatkan detail arsitektur, relief, dan suasana
+            kawasan yang memperkaya pengalaman belajar sejarah.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card reveal">
+            <img src="assets/borobudur-hero.png" alt="Panorama Candi Borobudur" />
+            <div>
+              <h3>Panorama Candi</h3>
+              <p>Tampilan utama Borobudur sebagai ikon sejarah Jawa Tengah.</p>
+            </div>
+          </article>
+          <article class="gallery-card reveal">
+            <img src="assets/borobudur-relief.png" alt="Relief batu Candi Borobudur" />
+            <div>
+              <h3>Relief Batu</h3>
+              <p>Ukiran naratif yang menyimpan cerita dan ajaran masa lampau.</p>
+            </div>
+          </article>
+          <article class="gallery-card reveal">
+            <img src="assets/borobudur-stupa.png" alt="Deretan stupa Candi Borobudur" />
+            <div>
+              <h3>Deretan Stupa</h3>
+              <p>Bentuk khas yang menjadi penanda visual Candi Borobudur.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="kontak">
+        <div class="contact-content">
+          <div>
+            <p class="eyebrow">Kontak</p>
+            <h2>Rencanakan Kunjungan Belajar</h2>
+            <p>
+              Gunakan halaman ini sebagai dasar proyek sekolah, panduan wisata,
+              atau materi pengenalan bangunan bersejarah Indonesia.
+            </p>
+          </div>
+          <a class="contact-link" href="mailto:info@example.com">info@example.com</a>
+        </div>
+      </section>
+    </main>
+
+    <a class="back-to-top" href="#beranda" aria-label="Kembali ke atas">↑</a>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="current-year"></span> Website Sejarah Bangunan Bersejarah. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
