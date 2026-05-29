@@ -23,12 +23,16 @@ if (navToggle && navMenu) {
 }
 
 if (siteHeader) {
+  const desktopQuery = window.matchMedia("(min-width: 921px)");
+
   const toggleHeaderVisibility = () => {
     const menuIsOpen = navMenu?.classList.contains("is-open");
-    siteHeader.classList.toggle("is-hidden", window.scrollY > 8 && !menuIsOpen);
+    const shouldHide = desktopQuery.matches && window.scrollY > 8 && !menuIsOpen;
+    siteHeader.classList.toggle("is-hidden", shouldHide);
   };
 
   window.addEventListener("scroll", toggleHeaderVisibility, { passive: true });
+  window.addEventListener("resize", toggleHeaderVisibility);
   toggleHeaderVisibility();
 }
 
