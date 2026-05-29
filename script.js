@@ -3,6 +3,8 @@ const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const yearTarget = document.querySelector("#current-year");
 const siteHeader = document.querySelector(".site-header");
+const tourFrame = document.querySelector("#tour-frame");
+const spotButtons = document.querySelectorAll(".spot-button");
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
@@ -35,6 +37,28 @@ if (siteHeader) {
   window.addEventListener("resize", toggleHeaderVisibility);
   toggleHeaderVisibility();
 }
+
+const setActiveSpot = (index) => {
+  const selectedButton = spotButtons[index];
+
+  if (!tourFrame || !selectedButton) {
+    return;
+  }
+
+  tourFrame.src = selectedButton.dataset.src;
+  tourFrame.title = selectedButton.dataset.title;
+
+  spotButtons.forEach((button, buttonIndex) => {
+    const isActive = buttonIndex === index;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+};
+
+spotButtons.forEach((button, index) => {
+  button.addEventListener("click", () => setActiveSpot(index));
+});
 
 // Reveal gallery cards when they enter the viewport.
 const revealItems = document.querySelectorAll(".reveal");

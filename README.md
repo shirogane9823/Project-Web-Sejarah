@@ -6,7 +6,7 @@ Website statis bertema wisata sejarah untuk memperkenalkan Candi Borobudur. Proy
 
 - Hero section dengan gambar besar bangunan bersejarah.
 - Navigasi sederhana: Beranda, Lokasi, Sejarah, Galeri, Kontak.
-- Area iframe placeholder untuk Google Maps atau Street View 360.
+- Area tur virtual dengan 3 spot Google Maps Street View 360.
 - Bagian sejarah berisi nama bangunan, lokasi, tahun dibangun, latar belakang, fakta penting, dan fungsi saat ini.
 - Galeri kartu gambar dengan aset lokal.
 - Desain responsif bergaya microsite wisata: hero foto besar, header putih-emas, kartu konten terang, dan tipografi tegas.
@@ -57,9 +57,11 @@ Untuk galeri, ubah gambar pada setiap elemen `.gallery-card`.
 
 1. Buka Google Maps.
 2. Cari lokasi bangunan bersejarah.
-3. Pilih opsi bagikan atau embed map.
-4. Salin kode iframe dari Google Maps.
-5. Buka `index.html`, cari bagian `.map-frame`, lalu ganti iframe placeholder dengan iframe dari Google Maps.
+3. Pilih mode Street View atau 360.
+4. Pilih opsi bagikan atau embed map.
+5. Salin kode iframe dari Google Maps.
+6. Buka `index.html`, cari tombol `.spot-button`, lalu ganti nilai `data-src` sesuai iframe baru.
+7. Untuk spot pertama, ganti juga `src` pada iframe `#tour-frame`.
 
 Contoh bentuk iframe Google Maps:
 
@@ -72,4 +74,4 @@ Contoh bentuk iframe Google Maps:
 ></iframe>
 ```
 
-Pastikan hanya mengganti bagian iframe, bukan seluruh section lokasi.
+Pastikan hanya mengganti URL Google Maps pada `src` dan `data-src`, bukan seluruh section lokasi.

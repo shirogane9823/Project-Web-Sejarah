@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sejarah Bangunan Bersejarah | Candi Borobudur</title>
+    <title>Candi Borobudur | Azka </title>
     <meta
       name="description"
       content="Website wisata sejarah tentang Candi Borobudur dengan peta 360, informasi sejarah, dan galeri."
@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="style.css?v=7" />
   </head>
   <body>
     <header class="site-header">
       <nav class="navbar" aria-label="Navigasi utama">
         <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
-          <span class="brand-mark">CB</span>
-          <span>Candi Borobudur</span>
+          <span class="brand-mark">TD</span>
+          <span>TRACESDJB</span>
         </a>
 
         <button
@@ -56,79 +56,12 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <p class="eyebrow">Wisata sejarah Indonesia</p>
-          <h1>Sejarah Bangunan Bersejarah</h1>
+          <h1>Candi Borobudur</h1>
           <p>
             Mengenal Candi Borobudur sebagai warisan budaya, pusat pembelajaran,
             dan tujuan wisata sejarah yang bernilai dunia.
           </p>
           <a class="hero-action" href="#sejarah">Pelajari Sejarah</a>
-        </div>
-      </section>
-
-      <section class="map-section section-pad" id="lokasi">
-        <div class="section-heading">
-          <p class="eyebrow">Lokasi 360</p>
-          <h2>Jelajahi Area Candi</h2>
-          <p>
-            Kenali letak kawasan Borobudur dan bayangkan rute kunjungan dari
-            halaman utama hingga area teras candi.
-          </p>
-        </div>
-
-        <div class="map-frame" aria-label="Peta 360 Candi Borobudur">
-          <!-- Ganti isi srcdoc ini dengan src Google Maps embed jika dibutuhkan. -->
-          <iframe
-            title="Peta 360 Candi Borobudur"
-            loading="lazy"
-            srcdoc="
-              <html>
-                <head>
-                  <style>
-                    body {
-                      margin: 0;
-                      min-height: 100vh;
-                      display: grid;
-                      place-items: center;
-                      font-family: Arial, sans-serif;
-                      color: #202b3b;
-                      background:
-                        radial-gradient(circle at 60% 44%, rgba(211, 164, 82, .18) 0 4%, transparent 4.4%),
-                        linear-gradient(25deg, transparent 0 42%, rgba(62, 138, 163, .22) 42% 48%, transparent 48%),
-                        linear-gradient(105deg, transparent 0 36%, rgba(102, 152, 91, .18) 36% 44%, transparent 44%),
-                        repeating-linear-gradient(0deg, #ece7dd 0 72px, #e1ded4 72px 74px);
-                    }
-                    .pin {
-                      width: min(78%, 560px);
-                      padding: 34px;
-                      text-align: center;
-                      border: 1px solid rgba(211, 164, 82, .35);
-                      border-radius: 8px;
-                      background: rgba(255, 255, 255, .9);
-                      box-shadow: 0 24px 70px rgba(32,43,59,.16);
-                    }
-                    strong {
-                      display: block;
-                      margin-bottom: 10px;
-                      color: #bd8b35;
-                      font-size: 24px;
-                    }
-                    span {
-                      display: block;
-                      line-height: 1.55;
-                      font-size: 15px;
-                    }
-                  </style>
-                </head>
-                <body>
-                  <div class='pin'>
-                    <strong>Area Peta 360 Candi Borobudur</strong>
-                    <span>Candi Borobudur, Magelang, Jawa Tengah</span>
-                    <span>Visual lokasi untuk orientasi kunjungan sejarah.</span>
-                  </div>
-                </body>
-              </html>
-            "
-          ></iframe>
         </div>
       </section>
 
@@ -203,6 +136,63 @@
         </div>
       </section>
 
+      <section class="map-section section-pad" id="lokasi">
+        <div class="section-heading">
+          <p class="eyebrow">Tur Virtual</p>
+          <h2>Jelajahi 3 Spot 360</h2>
+          <p>
+            Pilih spot di bawah peta untuk berpindah sudut pandang Street View
+            Candi Borobudur.
+          </p>
+        </div>
+
+        <div class="virtual-tour">
+          <div class="map-frame" aria-label="Peta 360 Candi Borobudur">
+            <iframe
+              id="tour-frame"
+              title="Street View 360 Candi Borobudur - Spot 1"
+              src="https://www.google.com/maps/embed?pb=!4v1780039220430!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ1d0TXl1TXc.!2m2!1d-7.608605888232658!2d110.2038603735411!3f312.6792602338729!4f15.76089994937675!5f0.7820865974627469"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="spot-picker" aria-label="Pilih spot tur virtual">
+              <button
+                class="spot-button is-active"
+                type="button"
+                data-title="Street View 360 Candi Borobudur - Spot 1"
+                data-src="https://www.google.com/maps/embed?pb=!4v1780039220430!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ1d0TXl1TXc.!2m2!1d-7.608605888232658!2d110.2038603735411!3f312.6792602338729!4f15.76089994937675!5f0.7820865974627469"
+                aria-pressed="true"
+              >
+                <span class="spot-thumb spot-thumb-1"></span>
+                <span>Spot 1</span>
+              </button>
+              <button
+                class="spot-button"
+                type="button"
+                data-title="Street View 360 Candi Borobudur - Spot 2"
+                data-src="https://www.google.com/maps/embed?pb=!4v1780040942701!6m8!1m7!1sCAoSHENJQUJJaEFHYndOUXJSZmg0V2dKaDBrQURCNkQ.!2m2!1d-7.607873834786345!2d110.2037513029544!3f276.73852560954214!4f10.447474339446714!5f0.4000000000000002"
+                aria-pressed="false"
+              >
+                <span class="spot-thumb spot-thumb-2"></span>
+                <span>Spot 2</span>
+              </button>
+              <button
+                class="spot-button"
+                type="button"
+                data-title="Street View 360 Candi Borobudur - Spot 3"
+                data-src="https://www.google.com/maps/embed?pb=!4v1780040985177!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzBoNEhvZWc.!2m2!1d-7.60774992874836!2d110.2043390118126!3f320.1046286767736!4f20.73829515153969!5f0.7820865974627469"
+                aria-pressed="false"
+              >
+                <span class="spot-thumb spot-thumb-3"></span>
+                <span>Spot 3</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="gallery section-pad" id="galeri">
         <div class="section-heading">
           <p class="eyebrow">Galeri</p>
@@ -248,7 +238,7 @@
               atau materi pengenalan bangunan bersejarah Indonesia.
             </p>
           </div>
-          <a class="contact-link" href="mailto:info@example.com">info@example.com</a>
+          <a class="contact-link" href="azkaa221799@gmail.com">azkaa221799@gmail.com</a>
         </div>
       </section>
     </main>
@@ -256,9 +246,9 @@
     <a class="back-to-top" href="#beranda" aria-label="Kembali ke atas">↑</a>
 
     <footer class="site-footer">
-      <p>&copy; <span id="current-year"></span> Website Sejarah Bangunan Bersejarah. Semua hak dilindungi.</p>
+      <p>&copy; <span id="current-year"></span> XITJKT1 </p>
     </footer>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=7"></script>
   </body>
 </html>

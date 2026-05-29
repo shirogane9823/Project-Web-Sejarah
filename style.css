@@ -276,7 +276,7 @@ h3 {
 .highlight-grid,
 .gallery-grid,
 .contact-content,
-.map-frame {
+.virtual-tour {
   width: min(1620px, calc(100% - 280px));
   margin: 0 auto;
 }
@@ -293,14 +293,31 @@ h3 {
 }
 
 .map-section {
-  background: var(--paper);
+  color: var(--paper);
+  background: #202529;
 }
 
 .map-section .section-heading {
   padding-top: 8px;
+  text-align: center;
+}
+
+.map-section .section-heading p:not(.eyebrow) {
+  margin-right: auto;
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.map-section h2 {
+  color: var(--paper);
+}
+
+.virtual-tour {
+  max-width: 1210px;
 }
 
 .map-frame {
+  position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -314,6 +331,71 @@ h3 {
   height: min(58vh, 620px);
   min-height: 380px;
   border: 0;
+}
+
+.spot-picker {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  max-width: calc(100% - 40px);
+  padding: 14px 22px;
+  border-radius: var(--radius);
+  background: rgba(20, 26, 33, 0.72);
+  backdrop-filter: blur(8px);
+  transform: translateX(-50%);
+}
+
+.spot-button {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  min-width: 78px;
+  border: 0;
+  color: var(--paper);
+  background: transparent;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.spot-button.is-active {
+  color: #ffd326;
+}
+
+.spot-thumb {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border: 3px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.spot-button:hover .spot-thumb,
+.spot-button:focus-visible .spot-thumb,
+.spot-button.is-active .spot-thumb {
+  border-color: #ffd326;
+  transform: translateY(-2px);
+}
+
+.spot-thumb-1 {
+  background-image: url("assets/borobudur-hero.png");
+}
+
+.spot-thumb-2 {
+  background-image: url("assets/borobudur-relief.png");
+}
+
+.spot-thumb-3 {
+  background-image: url("assets/borobudur-stupa.png");
 }
 
 .history {
@@ -552,7 +634,7 @@ h3 {
   .highlight-grid,
   .gallery-grid,
   .contact-content,
-  .map-frame {
+  .virtual-tour {
     width: min(100% - 48px, 1160px);
   }
 
@@ -678,7 +760,7 @@ h3 {
   .highlight-grid,
   .gallery-grid,
   .contact-content,
-  .map-frame {
+  .virtual-tour {
     width: min(100% - 24px, 1160px);
   }
 
@@ -717,6 +799,31 @@ h3 {
 
   .highlight-grid {
     grid-template-columns: 1fr;
+  }
+
+  .map-frame iframe {
+    min-height: 430px;
+  }
+
+  .spot-picker {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    gap: 8px;
+    max-width: none;
+    padding: 12px 10px;
+    transform: none;
+  }
+
+  .spot-button {
+    min-width: 0;
+    width: 100%;
+    font-size: 0.88rem;
+  }
+
+  .spot-thumb {
+    width: 58px;
+    height: 58px;
   }
 
   .back-to-top {
